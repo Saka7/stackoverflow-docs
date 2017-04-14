@@ -1,4 +1,4 @@
-# Generating Pipes
+# Generating pipes
 
 To add a pipe with a name `searchByName`, run:
 

@@ -1,6 +1,6 @@
-# Generating Services
+# Generating services
 
-To add a service with a dependency injection name `UserService`, run:
+To add a service with a name `UserService`, run:
 
 ```bash
   $ ng g s user
@@ -42,7 +42,5 @@ All `generate service` flags:
 
 Description                     | Flag                                    | Shortened     | Default Value
 ---                             | ---                                     | ---           | ---
-Prevent folder creation         | `--flat false`                          | `-f false`    | `true`
+Enable folder creation          | `--flat false`                          | `-f false`    | `true`
 Prevent `.spec` files creation  | `--spec false`                          | `-sp false`   | `true`
-
-

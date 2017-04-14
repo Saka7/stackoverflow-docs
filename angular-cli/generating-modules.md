@@ -1,4 +1,4 @@
-# Generating Modules
+# Generating modules
 
 To add a module called `GuestModule`, run:
 
@@ -19,7 +19,7 @@ To add a module called `GuestModule`, run:
     create src/app/guest/guest.module.ts
 ```
 
-- To enable routing use `--routing` or `-r` flag
+- To enable routing add `--routing` or `-r` flag
 
 ```bash
   $ ng g m guest --routing
