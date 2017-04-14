@@ -11,7 +11,7 @@ To add a pipe with a name `searchByName`, run:
     update src/app/app.module.ts
 ```
 
-- To prevent `.spec` files creation add`--spec false` or `-sp false` flag
+- To prevent `.spec` files creation add `--spec false` or `-sp false` flag
 
 ```bash
   $ ng g p search-by-name --spec false
@@ -32,7 +32,7 @@ To add a pipe with a name `searchByName`, run:
     update src/app/app.module.ts
 ```
 
-You can also combine flags listed above. For example, to create only `.pipe.ts` file inside folder `search-by-name` folder without `.spec` file use the following command.
+You can also combine flags listed above. For example, to create only `search-by-name.pipe.ts` file inside folder `search-by-name` folder without `.spec` file use the following command.
 
 ```bash
   $ ng g p search-by-name -f false -sp false
