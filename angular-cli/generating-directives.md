@@ -26,7 +26,7 @@ import { Directive } from '@angular/core';
 export class HighlightDirective {}
 ```
 
-- To prevent `.spec` files creation, use `--spec false` or `-sp false` flag
+- To prevent `.spec` files creation add `--spec false` or `-sp false` flag
 
 ```bash
   $ ng g d highlight --spec false
@@ -36,24 +36,24 @@ export class HighlightDirective {}
     update src/app/app.module.ts
 ```
 
-- To prevent folder creation add `--flat` or `-f` flag
+- To enable folder creation add `--flat false` or `-f false` flag
 
 ```bash
-  $ ng g d highlight --flat
+  $ ng g d highlight --flat false
   
   installing directive
-    create src/app/highlight.directive.spec.ts
-    create src/app/highlight.directive.ts
+    create src/app/highlight/highlight.directive.spec.ts
+    create src/app/highlight/highlight.directive.ts
     update src/app/app.module.ts
 ```
 
-You can also combine flags listed above. For example, to create only `.directive.ts` file without `.spec` file and folder use following command.
+You can also combine flags listed above. For example, to create only `highlight.directive.ts` file inside `highlight` folder without `.spec` file use the following command.
 
 ```bash
-  $ ng g d highlight -f -sp false
+  $ ng g d highlight -f false -sp false
 
   installing directive
-    create src/app/highlight.directive.ts
+    create src/app/highlight/highlight.directive.ts
     update src/app/app.module.ts
 ```
 
@@ -61,6 +61,6 @@ All `generate directive` flags:
 
 Description                     | Flag                                    | Shortened     | Default Value
 ---                             | ---                                     | ---           | ---
-Prevent folder creation         | `--flat`                                | `-f`          | `false`
+Prevent folder creation         | `--flat false`                          | `-f false`    | `true`
 Prevent prefix usage            | `--prefix false`                        | `-p false`    | `true`
 Prevent `.spec` files creation  | `--spec false`                          | `-sp false`   | `true`

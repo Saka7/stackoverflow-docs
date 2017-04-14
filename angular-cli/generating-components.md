@@ -33,7 +33,7 @@ import { Component } from '@angular/core';
 export class UserListComponent {}
 ```
 
-- To prevent `.spec` files creation, use `--spec false` or `-sp false` flag
+- To prevent `.spec` files creation add `--spec false` or `-sp false` flag
 
 ```bash
   $ ng g c user-list --spec false
@@ -82,7 +82,7 @@ export class UserListComponent {}
     update src/app/app.module.ts
 ```
 
-You can also combine flags listed above. For example, to create only `.component.ts` file without `.css`, `.html`, `.spec` files and folder use following command.
+You can also combine flags listed above. For example, to create only `.component.ts` file without `.css`, `.html`, `.spec` files and folder use the following command.
 
 ```bash
   $ ng g c user-list -f -it -is -sp false

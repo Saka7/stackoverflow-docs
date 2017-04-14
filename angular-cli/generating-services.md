@@ -10,7 +10,7 @@ To add a service with a dependency injection name `UserService`, run:
     create src/app/user.service.ts
 ```
 
-- To prevent `.spec` files creation, use `--spec false` or `-sp false` flag
+- To prevent `.spec` files creation add `--spec false` or `-sp false` flag
 
 ```bash
   $ ng g s user --spec false
@@ -19,30 +19,30 @@ To add a service with a dependency injection name `UserService`, run:
     create src/app/user.service.ts
 ```
 
-- To prevent folder creation add `--flat` or `-f` flag
+- To enable folder creation add `--flat false` or `-f false` flag
 
 ```bash
-  $ ng g s user --flat
+  $ ng g s user --flat false
 
   installing service
-    create src/app/user.service.spec.ts
-    create src/app/user.service.ts
+    create src/app/user/user.service.spec.ts
+    create src/app/user/user.service.ts
 ```
 
-You can also combine flags listed above. For example, to create only `.service.ts` file without `.spec` file and folder use following command.
+You can also combine flags listed above. For example, to create only `user.service.ts` file inside `user` folder without `.spec` file use the following command.
 
 ```bash
-  $ ng g s user -f -sp false
+  $ ng g s user -f false -sp false
 
   installing service
-    create src/app/user.service.ts
+    create src/app/user/user.service.ts
 ```
 
 All `generate service` flags:
 
 Description                     | Flag                                    | Shortened     | Default Value
 ---                             | ---                                     | ---           | ---
-Prevent folder creation         | `--flat`                                | `-f`          | `false`
+Prevent folder creation         | `--flat false`                          | `-f false`    | `true`
 Prevent `.spec` files creation  | `--spec false`                          | `-sp false`   | `true`
 
 
