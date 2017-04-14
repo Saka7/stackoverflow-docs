@@ -61,6 +61,6 @@ All `generate directive` flags:
 
 Description                     | Flag                                    | Shortened     | Default Value
 ---                             | ---                                     | ---           | ---
-Prevent folder creation         | `--flat false`                          | `-f false`    | `true`
+Enable folder creation          | `--flat false`                          | `-f false`    | `true`
 Prevent prefix usage            | `--prefix false`                        | `-p false`    | `true`
 Prevent `.spec` files creation  | `--spec false`                          | `-sp false`   | `true`
