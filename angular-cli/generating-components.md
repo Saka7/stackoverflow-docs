@@ -86,6 +86,7 @@ You can also combine flags listed above. For example, to create only `.component
 
 ```bash
   $ ng g c user-list -f -it -is -sp false
+  
   installing component
     create src/app/user-list.component.ts
     update src/app/app.module.ts  
